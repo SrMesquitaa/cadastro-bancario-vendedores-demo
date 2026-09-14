@@ -32,6 +32,3 @@ cp .env.example .env.local   # preencher com suas próprias credenciais Supabase
 npm run dev
 ```
 
-## O que fica de fora desta versão pública
-
-Nomes reais de empresa/marca, credenciais, e algumas regras de negócio muito específicas do contexto original foram removidas ou trocadas por versões fictícias equivalentes. A lógica de validação (PIX, formulário, segregação de painel) é a mesma do sistema em produção.
