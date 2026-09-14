@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="52" viewBox="0 0 220 52">
+  <rect x="0" y="8" width="36" height="36" rx="8" fill="#F8FAFC"/>
+  <path d="M10 32 L18 16 L26 32" stroke="#1E293B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="46" y="34" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#F8FAFC">NovaVenda</text>
+</svg>

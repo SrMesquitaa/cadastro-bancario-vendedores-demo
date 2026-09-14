@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --brand-navy: #1e293b;
+  --brand-cyan: #2563eb;
+  --brand-orange: #f97316;
+  --brand-gold: #eab308;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sora);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@keyframes etapa-entrada {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-etapa {
+  animation: etapa-entrada 0.35s ease-out;
+}
+
+/* Garante que a barra de rolagem horizontal nunca vire overlay escondido
+   nem fique invisível por falta de cor (o thumb/track sem cor definida
+   renderiza transparente em alguns navegadores/SOs). */
+.scroll-visivel {
+  scrollbar-width: thin;
+  scrollbar-color: #d7dbe3 transparent;
+}
+
+.scroll-visivel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-visivel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-visivel::-webkit-scrollbar-thumb {
+  background: #d7dbe3;
+  border-radius: 999px;
+}
+
+.scroll-visivel::-webkit-scrollbar-thumb:hover {
+  background: #b8bfcc;
+}
